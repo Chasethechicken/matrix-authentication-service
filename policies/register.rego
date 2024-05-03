@@ -15,7 +15,7 @@ allow {
 }
 
 violation[{"field": "username", "msg": "username too short"}] {
-	count(input.username) <= 2
+	count(input.username) < 1
 }
 
 violation[{"field": "username", "msg": "username too long"}] {
