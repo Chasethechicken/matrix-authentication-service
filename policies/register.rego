@@ -23,7 +23,7 @@ violation[{"field": "username", "msg": "username too long"}] {
 }
 
 violation[{"field": "username", "msg": "username contains invalid characters"}] {
-	not regex.match("^[a-z0-9.=_/-]+$", input.username)
+	not regex.match("^[a-z0-9.=_/+-]+$", input.username)
 }
 
 violation[{"msg": "unspecified registration method"}] {
