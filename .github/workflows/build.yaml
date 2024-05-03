@@ -1,5 +1,7 @@
 name: Build
 
+# pls run
+
 on:
   push:
     branches: [ main ]
