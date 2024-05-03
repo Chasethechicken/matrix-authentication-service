@@ -8,6 +8,11 @@ on:
     tags:
       - 'v*'
 
+  workflow_dispatch:
+    secrets:
+      XX:
+        required: false
+
   # Only run for pull requests if relevant files were changed
   pull_request:
     branches: [ main ]
